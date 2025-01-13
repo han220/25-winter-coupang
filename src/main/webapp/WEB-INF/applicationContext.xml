@@ -14,11 +14,11 @@
     <context:annotation-config/>
     <context:component-scan base-package="com.example"/>
 
-     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}"/>
-        <property name="username" value="${MYSQLUSER}"/>
-        <property name="password" value="${MYSQLPASSWORD}"/>
+        <property name="url" value="jdbc:mysql://a.jungsub.com:7979/25-winter-web-coupang?serverTimezone=Asia/Seoul" />
+        <property name="username" value="25-winter-web-coupang"/>
+        <property name="password" value="dnlsxj1234"/>
     </bean>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
